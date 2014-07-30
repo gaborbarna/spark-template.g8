@@ -10,7 +10,7 @@ object $classname$ {
     val sc = new SparkContext(conf)
     val slices = if (args.length > 0) args(0).toInt else 2
     val pi = calculatePi(sc, slices)
-    println("Pi is roughly ", pi)
+    println(s"Pi is roughly \$pi")
     sc.stop()
   }
 
