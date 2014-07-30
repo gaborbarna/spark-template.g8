@@ -12,7 +12,7 @@ class $classname$Spec extends SparkTestUtils with ShouldMatchers {
   }
 
   sparkTest("spark PI") {
-    val pi = First.calculatePi(sc, 10)
+    val pi = $classname$.calculatePi(sc, 10)
     pi should equal (3.14 +- 0.01)
   }
 
