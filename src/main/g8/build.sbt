@@ -4,11 +4,11 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-  "org.scalatest" % "scalatest_2.10" % "2.2.4" % "test",
-  "org.apache.spark" %% "spark-core" % "1.3.0" % "provided"
+  "org.scalatest" %% "scalatest" % "2.2.5" % "test",
+  "org.apache.spark" %% "spark-core" % "1.5.1" % "provided"
 )
 
 initialCommands := "import $organization$.$name;format="lower,word"$._"

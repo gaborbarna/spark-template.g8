@@ -1,9 +1,3 @@
-import AssemblyKeys._ // put this at the top of the file
-
-assemblySettings
-
-test in assembly := {}
-
 mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
   {
     case x if Assembly.isConfigFile(x) =>
@@ -27,4 +21,3 @@ mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
     case _ => MergeStrategy.first
   }
 }
-
